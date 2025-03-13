@@ -12,6 +12,7 @@ NAMESPACE ControlSystem
     METHOD  Start : Int
        
     END_METHOD
+   
     METHOD  Stop : Int
         
     END_METHOD

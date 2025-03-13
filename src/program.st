@@ -1,5 +1,6 @@
 USING ControlSystem;
 USING ControlModule;
+
 PROGRAM MyProgram
     VAR_EXTERNAL
         startButton : BOOL;
@@ -7,8 +8,7 @@ PROGRAM MyProgram
         homeSignal : BOOL;
         workSignal : BOOL;
     END_VAR
-    
-    
+       
     VAR
         workGroup_1 : WorkGroup;
         valve : ValveA;
@@ -18,8 +18,7 @@ PROGRAM MyProgram
     VAR_TEMP
 
     END_VAR
-   
-    
+
     workGroup_1.Initialize(valve);
     IF startButton THEN
         workGroup_1.Start();

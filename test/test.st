@@ -1,5 +1,6 @@
 USING AxUnit;
 USING ControlModule;
+USING ControlSystem;
 
 NAMESPACE TestControlModule
 
@@ -8,6 +9,7 @@ NAMESPACE TestControlModule
 
         VAR PROTECTED
             testInstance : ValveA;
+            workGroup_1 : WorkGroup;
         END_VAR
 
         {Test}
@@ -31,6 +33,7 @@ NAMESPACE TestControlModule
             testInstance.SetOutput(resultGoToHome,resultGoToWork);
             Assert.Equal(actual := resultGoToHome, expected := TRUE);
         END_METHOD
+        
     END_CLASS
     
 END_NAMESPACE

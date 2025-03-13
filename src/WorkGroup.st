@@ -15,13 +15,16 @@ NAMESPACE ControlSystem
                 valve : IValve;
             END_VAR
             _valve := valve;
+
         END_METHOD
+
         METHOD PUBLIC Start : Int
             _valve.Open();
         END_METHOD
         METHOD PUBLIC Stop : Int
             _valve.Close();
         END_METHOD
+
 
         METHOD PUBLIC WriteCyclic
             VAR_OUTPUT

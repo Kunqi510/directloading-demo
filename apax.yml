@@ -11,6 +11,7 @@ variables:
 devDependencies:
   "@ax/sdk": 2311.0.3
   "@ax/dcp-utility": ^1.1.1
+  "@ax/st-lang-contrib-library-toolbox": ^0.21.1
 installStrategy: overridable
 apaxVersion: 3.1.1
 registries:
@@ -18,6 +19,8 @@ registries:
 dependencies:
   "@fa_sup_cn/control-module": ^0.0.1
   "@ax/trace": ^2.8.1
+  "@ax/system-timer": ^6.0.94
+  "@ax/agent": ^0.7.0
 scripts:
   setscope:
     - apax config set token $1  --registry https://code.siemens.com/api/v4/projects/343725/packages/npm/
