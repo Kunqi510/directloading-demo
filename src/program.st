@@ -11,8 +11,8 @@ PROGRAM MyProgram
        
     VAR
         workGroup_1 : WorkGroup;
+        valve : ValveB;
         valve : ValveA;
-        // valve : ValveB;
     END_VAR
 
     VAR_TEMP
